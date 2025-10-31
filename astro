@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>iiitn game jam finalist</title>
+    <style>
+        :root{--accent:#ff5a66;--bg1:#071029;--bg2:#0b1830}
+        *{box-sizing:border-box}
+        html,body{height:100%}
+        body{
+            margin:0;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            background:linear-gradient(135deg,var(--bg1),var(--bg2));
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            -webkit-font-smoothing:antialiased;
+            color:#fff;
+        }
+        /* Banner style */
+        .banner{
+            padding:1.25rem 2.5rem;
+            border-radius:14px;
+            background:linear-gradient(90deg, rgba(255,90,102,0.08), rgba(255,165,84,0.04));
+            border:1px solid rgba(255,90,102,0.16);
+            box-shadow: 0 12px 30px rgba(2,6,23,0.7);
+            transform:skewX(-6deg);
+            display:inline-block;
+        }
+        .banner h1{
+            margin:0;
+            transform:skewX(6deg);
+            font-size:clamp(1.6rem,6vw,3rem);
+            letter-spacing:0.18em;
+            text-transform:uppercase;
+            color:var(--accent);
+            font-weight:800;
+        }
+        /* Optional small subtitle for context (hidden by default) */
+        .banner p{display:none;margin-top:.4rem;color:rgba(255,255,255,0.75);font-size:.9rem;transform:skewX(6deg)}
+        @media (min-width:900px){
+            .banner{padding:1.5rem 3.5rem;border-radius:16px}
+        }
+    </style>
+</head>
+<body>
+    <div class="banner" role="banner" aria-label="iiitn game jam finalist">
+        <h1>iiitn game jam finalist</h1>
+    </div>
+</body>
+</html>
